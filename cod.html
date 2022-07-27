@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+ <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<script>
+function fn1() {
+  var str1 = parseFloat(document.getElementById("a").value);
+  var str2 = parseFloat(document.getElementById("b").value);
+  var str3 = parseFloat(document.getElementById("c").value);
+  var str4 = str1 - str2;
+  var str5 = str4*str3*8000;
+  document.getElementById("demo").innerHTML = "COD is " + str5 + " milligrams per liter";
+  
+}
+</script>
+
+<style>
+body {background-image: url("bg.jpg");
+	color: white;
+	margin-left: 20px;}
+div.main{
+		width: 400px;
+		margin: auto auto; }
+h2 {margin-bottom: 50px;
+margin-top: 30px;
+margin-left: 20px;}
+
+input {margin-bottom: 50px;
+margin-top: 30px;
+margin-left: 20px;}
+
+h2 {margin-bottom: 20px;
+margin-top: 20px;
+margin-left: 20px;}
+
+h3 {
+margin-top: 10px;
+margin-left: 20px;}
+
+button {
+margin-left: 80px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green;
+}
+
+
+
+
+
+
+
+</style>
+
+
+</head>
+<body>
+
+
+<div class="main">
+<h2> Calculate Chemical Oxygen Demand (COD) </h2>
+a = Titrant used for your sample expressed in mL: <input type="text" id="a" /><br>
+b = Titrant used for your blank sample in mL: <input type="text" id="b" /><br>
+C = The normality of the ferrous ammonium sulfate: <input type="text" id="c" /><br>
+<button onclick="fn1()" id = "btn1" class="btn btn-outline-light"> Click Me </button>
+
+<h3 id="demo"></h1>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+ <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+</body>
+</html>
